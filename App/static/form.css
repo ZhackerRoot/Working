@@ -1,0 +1,54 @@
+.form-group {
+    border-radius: 10px;
+    background-color: #e9ede2;
+    padding: 90px;
+  }
+
+  .btn:hover {
+    opacity: 1;
+  }
+
+  * {box-sizing: border-box;}
+
+/* Style the input container */
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Style the form icons */
+.icon {
+  padding: 10px;
+  background: rgb(13, 17, 20);
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Style the input fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid rgb(15, 17, 19);
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */

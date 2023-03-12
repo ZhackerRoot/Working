@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{%load static%}
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="{%static 'topnav.css'%}">
+  <link rel="stylesheet" href="{% static 'home.css'%}">
+  <link rel="stylesheet" href="{%static 'about.css'%}">
+  <link rel="stylesheet" href="{%static 'form.css'%}">
+  <link rel="stylesheet" href="{%static 'table.css'%}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="{% static 'insta.png'%}" type="image/icon type">
+</head>
+<body>
+
+    <div class="topnav">
+        <a class="active" href="{%url 'home'%}">Home</a>
+        <a href="{%url 'members'%}">Members</a>
+        <a href="{%url 'about'%}">About</a>
+        <a class="split" href="{% url 'login'%}">Log-in</a>
+    </div>
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>
